@@ -317,6 +317,8 @@ LIST_SECTIONS_WATCH_LIST_EVAL: list[str] = ['TUPLE_PERFORMANCE_WATCH_LIST_EVAL_Q
                                             'TUPLE_PERFORMANCE_WATCH_LIST_EVAL_FIFTY_DAY_MOMENTUM',
                                             'TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWO_HUNDRED_DAY_MOMENTUM',
                                             'TUPLE_PERFORMANCE_WATCH_LIST_EVAL_SECTION_CHANGE_PERCENT',
+                                            'TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT_JSON_OBJECT',
+                                            'TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT',
                                             'TUPLE_PERFORMANCE_WATCH_LIST_EVAL_ABSOLUTE_SCORE']
 
 TUPLE_PERFORMANCE_WATCH_LIST_EVAL_QUOTE_ISIN: tuple[str, str, tuple[str, str, str, str], type[tuple]] = \
@@ -385,6 +387,18 @@ TUPLE_PERFORMANCE_WATCH_LIST_EVAL_SECTION_CHANGE_PERCENT: tuple[str, str, tuple[
     ('section_change_percent', 'INTEGER'),
     tuple)
 
+TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT_JSON_OBJECT: tuple[str, str, tuple[str, str], type[tuple]] = \
+    ('PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT_JSON_OBJECT',
+    'twenty_day_change_percent_jsom_object',
+    ('twenty_day_change_percent_jsom_object', 'BLOB'),
+    tuple)
+
+TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT: tuple[str, str, tuple[str, str], type[tuple]] = \
+    ('PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT',
+    'twenty_day_change_percent',
+    ('twenty_day_change_percent', 'INTEGER'),
+    tuple)
+
 TUPLE_PERFORMANCE_WATCH_LIST_EVAL_ABSOLUTE_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('PERFORMANCE_WATCH_LIST_EVAL.ABSOLUTE_SCORE',
     'absolute_score_eval',
@@ -412,6 +426,10 @@ LIST_PERFORMANCE_WATCH_LIST_EVAL_COLUMN_NAMES: list[str] = [TUPLE_PERFORMANCE_WA
                                                         TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWO_HUNDRED_DAY_MOMENTUM[
                                                         _index_tuple.OPTION_NAME],
                                                         TUPLE_PERFORMANCE_WATCH_LIST_EVAL_SECTION_CHANGE_PERCENT[
+                                                        _index_tuple.OPTION_NAME],
+                                                        TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT_JSON_OBJECT[
+                                                        _index_tuple.OPTION_NAME],
+                                                        TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT[
                                                         _index_tuple.OPTION_NAME],
                                                         TUPLE_PERFORMANCE_WATCH_LIST_EVAL_ABSOLUTE_SCORE[
                                                        _index_tuple.OPTION_NAME]]
