@@ -574,6 +574,19 @@ LIST_TWO_HUNDRED_DAY_MOMENTUM_TABLE: list[tuple[float, int]] = [
     (-1000, -5)
 ]
 
+LIST_TWENTY_DAY_CHANGE_PERCENT_RATIO: list[tuple[float, int]] = [
+    (0.95, 4),
+    (0.65, 5),
+    (0.6, 4),
+    (0.55, 3),
+    (0.5, 2),
+    (0.45, 0),
+    (0.4, -2),
+    (0.3, -3),
+    (0.2, -4),
+    (0, -5),
+]
+
 TUPLE_SCORE_TABLE_WEIGHT_NAME: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('SCORE_TABLE.WEIGHT_NAME',
     'weight_name',
@@ -596,5 +609,7 @@ LIST_WEIGHT_SCORE_TABLE: list[tuple[str, float]] = [
     ('weight_7', 0.5),
     ('weight_8', 0.5),
     ('weight_9', 0.5),
+    ('weight_10', 0.5),
+    ('weight_11', 0.5),
 ]
 
