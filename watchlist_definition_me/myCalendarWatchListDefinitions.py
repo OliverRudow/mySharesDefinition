@@ -9,7 +9,7 @@ __copyright__: str = "Copyright 2026, Brain Center Höfen"
 from data_base_me.mySQLDataBase import STR_SQL_DATA_BASE_NAME, STR_SQL_DATA_DIR_NAME
 from tuple_me import myTuple
 
-def init_dict_calendar_watch_list_data() -> dict[str,  int | None]:
+def init_dict_calendar_watch_list_data() -> dict[str,  str | int | None]:
     elem = 0
 
     for key in DICT_STATIC_WATCH_LIST_DATA:
@@ -48,7 +48,7 @@ TUPLE_CALENDAR_WATCH_LIST_QUOTE_ISIN: tuple[str, str, tuple[str, str, str, str],
 TUPLE_CALENDAR_WATCH_LIST_DIVIDEND_DATE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('CALENDAR_WATCH_LIST.DIVIDEND_DATE',
     'dividend_date',
-    ('dividend_date', 'INTEGER'),
+    ('dividend_date', 'TEXT'),
     tuple)
 
 TUPLE_CALENDAR_WATCH_LIST_DIVIDEND_DELTA_DATE: tuple[str, str, tuple[str, str], type[tuple]] = \
@@ -60,7 +60,7 @@ TUPLE_CALENDAR_WATCH_LIST_DIVIDEND_DELTA_DATE: tuple[str, str, tuple[str, str], 
 TUPLE_CALENDAR_WATCH_LIST_EX_DIVIDEND_DATE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('CALENDAR_WATCH_LIST.EX_DIVIDEND_DATE',
     'ex_dividend_date',
-    ('ex_dividend_date', 'INTEGER'),
+    ('ex_dividend_date', 'TEXT'),
     tuple)
 
 TUPLE_CALENDAR_WATCH_LIST_EX_DIVIDEND_DELTA_DATE: tuple[str, str, tuple[str, str], type[tuple]] = \
@@ -72,7 +72,7 @@ TUPLE_CALENDAR_WATCH_LIST_EX_DIVIDEND_DELTA_DATE: tuple[str, str, tuple[str, str
 TUPLE_CALENDAR_WATCH_LIST_EARNINGS_DATE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('CALENDAR_WATCH_LIST.EARNINGS_DATE',
     'earnings_date',
-    ('earnings_date', 'INTEGER'),
+    ('earnings_date', 'TEXT'),
     tuple)
 
 TUPLE_CALENDAR_WATCH_LIST_EARNINGS_DELTA_DATE: tuple[str, str, tuple[str, str], type[tuple]] = \
@@ -80,6 +80,7 @@ TUPLE_CALENDAR_WATCH_LIST_EARNINGS_DELTA_DATE: tuple[str, str, tuple[str, str], 
     'earnings_delta_date',
     ('earnings_delta_date', 'INTEGER'),
     tuple)
+
 _index_tuple = myTuple.MyTuple
 
 LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_CALENDAR_WATCH_LIST_QUOTE_ISIN[
@@ -97,7 +98,7 @@ LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_CALENDAR_WATCH_LIST_QU
                                                    TUPLE_CALENDAR_WATCH_LIST_EARNINGS_DELTA_DATE[
                                                       _index_tuple.OPTION_NAME],]
 
-DICT_STATIC_WATCH_LIST_DATA: dict[str,  int | None] = dict.fromkeys(LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES)
+DICT_STATIC_WATCH_LIST_DATA: dict[str,  str | int | None] = dict.fromkeys(LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES)
 
 EMPTY_LIST_ENTIRE_ROW: list = ['', '', '', '', '', '', '']
 
