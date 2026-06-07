@@ -9,7 +9,7 @@ __copyright__: str = "Copyright 2026, Brain Center Höfen"
 from data_base_me.mySQLDataBase import STR_SQL_DATA_BASE_NAME, STR_SQL_DATA_DIR_NAME
 from tuple_me import myTuple
 
-def init_dict_static_watch_list_data() -> dict[str, None]:
+def init_dict_calendar_watch_list_data() -> dict[str,  int | None]:
     elem = 0
 
     for key in DICT_STATIC_WATCH_LIST_DATA:
@@ -97,7 +97,7 @@ LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_CALENDAR_WATCH_LIST_QU
                                                    TUPLE_CALENDAR_WATCH_LIST_EARNINGS_DELTA_DATE[
                                                       _index_tuple.OPTION_NAME],]
 
-DICT_STATIC_WATCH_LIST_DATA: dict[str,  None] = dict.fromkeys(LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES)
+DICT_STATIC_WATCH_LIST_DATA: dict[str,  int | None] = dict.fromkeys(LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES)
 
 EMPTY_LIST_ENTIRE_ROW: list = ['', '', '', '', '', '', '']
 
