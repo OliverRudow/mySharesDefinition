@@ -1,7 +1,7 @@
 """myRankingWatchListDefinitions.py."""
 
 __title__: str = "myRankingWatchListDefinitions"
-__version__: str = "0.1.0"
+__version__: str = "0.1.1"
 __author__: str = "Oliver Rudow"
 __email__: str = "oliver.rudow@googlemail.com"
 __copyright__: str = "Copyright 2026, Brain Center Höfen"

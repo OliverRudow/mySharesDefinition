@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='mySharesDefinition',
-    version='0.1.1',
+    version='0.1.2',
     packages=['watchlist_definition_me'],
     url='',
     license='',
