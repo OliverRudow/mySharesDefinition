@@ -114,8 +114,8 @@ TUPLE_REPORT_TOP_LIST_PERFORMANCE_SCORE: tuple[str, str, tuple[str, str], type[t
 
 TUPLE_REPORT_TOP_LIST_TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY',
-    'twenty_day_change_percent_jsom_array',
-    ('twenty_day_change_percent_jsom_array', 'BLOB'),
+    '20d_cp_array',
+    ('20d_cp_array', 'BLOB'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_OVERALL_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
