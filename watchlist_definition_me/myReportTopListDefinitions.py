@@ -42,6 +42,7 @@ LIST_SECTIONS_WATCH_LIST: list[str] = ['TUPLE_REPORT_TOP_LIST_QUOTE_ISIN',
                                        'TUPLE_REPORT_TOP_LIST_DERIVATE_SCORE',
                                        'TUPLE_REPORT_TOP_LIST_FUNDAMENTALS_SCORE',
                                        'TUPLE_REPORT_TOP_LIST_PERFORMANCE_SCORE',
+                                       'TUPLE_REPORT_TOP_LIST_TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY',
                                        'TUPLE_REPORT_TOP_LIST_OVERALL_SCORE',
                                        'TUPLE_REPORT_TOP_LIST_SHIFT',]
 
@@ -111,6 +112,12 @@ TUPLE_REPORT_TOP_LIST_PERFORMANCE_SCORE: tuple[str, str, tuple[str, str], type[t
     ('perf_sc', 'REAL'),
     tuple)
 
+TUPLE_REPORT_TOP_LIST_TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY: tuple[str, str, tuple[str, str], type[tuple]] = \
+    ('REPORT_TOP_LIST.TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY',
+    'twenty_day_change_percent_jsom_array',
+    ('twenty_day_change_percent_jsom_array', 'BLOB'),
+    tuple)
+
 TUPLE_REPORT_TOP_LIST_OVERALL_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.OVERALL_SCORE',
      'score',
@@ -147,6 +154,8 @@ LIST_REPORT_TOP_LIST_COLUMN_NAMES: list[str] = [TUPLE_REPORT_TOP_LIST_QUOTE_ISIN
                                                     _index_tuple.OPTION_NAME],
                                                 TUPLE_REPORT_TOP_LIST_PERFORMANCE_SCORE[
                                                     _index_tuple.OPTION_NAME],
+                                                TUPLE_REPORT_TOP_LIST_TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY[
+                                                    _index_tuple.OPTION_NAME],
                                                 TUPLE_REPORT_TOP_LIST_OVERALL_SCORE[
                                                     _index_tuple.OPTION_NAME],
                                                 TUPLE_REPORT_TOP_LIST_SHIFT[
@@ -155,7 +164,7 @@ LIST_REPORT_TOP_LIST_COLUMN_NAMES: list[str] = [TUPLE_REPORT_TOP_LIST_QUOTE_ISIN
 
 DICT_REPORT_TOP_LIST_DATA: dict = dict.fromkeys(LIST_REPORT_TOP_LIST_COLUMN_NAMES)
 
-EMPTY_LIST_ENTIRE_ROW: list = ['', None, None, None, None, None, None, None, None, None, None, None, None]
+EMPTY_LIST_ENTIRE_ROW: list = ['', None, None, None, None, None, None, None, None, None, None, None, None, None]
 
 INDEX_PRIMARY_KEY = LIST_REPORT_TOP_LIST_COLUMN_NAMES.index(TUPLE_REPORT_TOP_LIST_QUOTE_ISIN[
                                                         _index_tuple.OPTION_NAME])
