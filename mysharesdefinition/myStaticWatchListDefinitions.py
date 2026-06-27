@@ -1,13 +1,13 @@
 """myCalendarWatchListDefinitions.py."""
 
 __title__: str = "myCalendarWatchListDefinitions"
-__version__: str = "0.1.1"
+__version__: str = "0.3.0"
 __author__: str = "Oliver Rudow"
 __email__: str = "oliver.rudow@googlemail.com"
 __copyright__: str = "Copyright 2026, Brain Center Höfen"
 
-from data_base_me.mySQLDataBase import STR_SQL_DATA_BASE_NAME, STR_SQL_DATA_DIR_NAME
-from tuple_me import myTuple
+from mydatabase.mySQLDataBase import STR_SQL_DATA_BASE_NAME, STR_SQL_DATA_DIR_NAME
+from mytuple import myTuple
 
 def init_dict_static_watch_list_data() -> dict[str, str| bool | None]:
     elem = 0

@@ -1,16 +1,15 @@
 """myReportTopListDefinitions.py."""
 
 __title__: str = "myReportTopListDefinitions"
-__version__: str = "0.1.0"
+__version__: str = "0.3.0"
 __author__: str = "Oliver Rudow"
 __email__: str = "oliver.rudow@googlemail.com"
 __copyright__: str = "Copyright 2026, Brain Center Höfen"
 
-from data_base_me.mySQLDataBase import STR_SQL_DATA_BASE_NAME, STR_SQL_DATA_DIR_NAME
-from watchlist_definition_me import myStaticWatchListDefinitions
-from watchlist_definition_me import myPerformanceWatchListDefinitions
-from watchlist_definition_me import myRankingWatchListDefinitions
-from tuple_me import myTuple
+from mydatabase.mySQLDataBase import STR_SQL_DATA_BASE_NAME, STR_SQL_DATA_DIR_NAME
+from mysharesdefinition import myPerformanceWatchListDefinitions, myRankingWatchListDefinitions, \
+    myStaticWatchListDefinitions
+from mytuple import myTuple
 
 
 STR_DATA_BASE_FILE_NAME: str = STR_SQL_DATA_BASE_NAME
