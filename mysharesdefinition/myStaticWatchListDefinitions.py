@@ -10,6 +10,7 @@ from mydatabase.mySQLDataBase import STR_SQL_DATA_BASE_NAME, STR_SQL_DATA_DIR_NA
 from mytuple import myTuple
 
 def init_dict_static_watch_list_data() -> dict[str, str| bool | None]:
+    """Initialize the dict to be used to get the static data from yfinance."""
     elem = 0
 
     for key in DICT_STATIC_WATCH_LIST_DATA:
