@@ -38,8 +38,7 @@ LIST_SECTIONS_WATCH_LIST: list[str] = ['STATIC_WATCH_LIST.QUOTE_NAME',
                                        'STATIC_WATCH_LIST.QUOTE_TICKER_SYMBOL',
                                        'STATIC_WATCH_LIST.QUOTE_INDUSTRY',
                                        'STATIC_WATCH_LIST.QUOTE_SECTOR',
-                                       'STATIC_WATCH_LIST.QUOTE_CURRENCY',
-                                       'STATIC_WATCH_LIST.QUOTE_INVEST_STATUS']
+                                       'STATIC_WATCH_LIST.QUOTE_CURRENCY']
 
 TUPLE_STATIC_WATCH_LIST_QUOTE_NAME: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('STATIC_WATCH_LIST.QUOTE_NAME',
@@ -83,21 +82,13 @@ TUPLE_STATIC_WATCH_LIST_QUOTE_CURRENCY: tuple[str, str, tuple[str, str], type[tu
     ('quote_currency', 'TEXT'),
      tuple)
 
-TUPLE_STATIC_WATCH_LIST_QUOTE_INVEST_STATUS: tuple[str, str, tuple[str, str], type[tuple]] = \
-    ('STATIC_WATCH_LIST.QUOTE_INVEST_STATUS',
-    'invest_status',
-    ('invest_status', 'BIT'),
-    tuple)
-
-
 LIST_STATIC_WATCH_LIST_FILTER_OPTIONS: list[tuple] = [TUPLE_STATIC_WATCH_LIST_QUOTE_NAME,
                                                       TUPLE_STATIC_WATCH_LIST_QUOTE_TYPE,
                                                       TUPLE_STATIC_WATCH_LIST_QUOTE_ISIN,
                                                       TUPLE_STATIC_WATCH_LIST_QUOTE_TICKER_SYMBOL,
                                                       TUPLE_STATIC_WATCH_LIST_QUOTE_INDUSTRY,
                                                       TUPLE_STATIC_WATCH_LIST_QUOTE_SECTOR,
-                                                      TUPLE_STATIC_WATCH_LIST_QUOTE_CURRENCY,
-                                                      TUPLE_STATIC_WATCH_LIST_QUOTE_INVEST_STATUS]
+                                                      TUPLE_STATIC_WATCH_LIST_QUOTE_CURRENCY]
 
 _index_tuple = myTuple.MyTuple
 
@@ -114,13 +105,11 @@ LIST_STATIC_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_STATIC_WATCH_LIST_QUOTE_
                                                   TUPLE_STATIC_WATCH_LIST_QUOTE_SECTOR[
                                                       _index_tuple.OPTION_NAME],
                                                   TUPLE_STATIC_WATCH_LIST_QUOTE_CURRENCY[
-                                                      _index_tuple.OPTION_NAME],
-                                                  TUPLE_STATIC_WATCH_LIST_QUOTE_INVEST_STATUS[
                                                       _index_tuple.OPTION_NAME]]
 
 DICT_STATIC_WATCH_LIST_DATA: dict[str, str | bool | None] = dict.fromkeys(LIST_STATIC_WATCH_LIST_COLUMN_NAMES)
 
-EMPTY_LIST_ENTIRE_ROW: list = ['', '', '', '', '', '', '', False]
+EMPTY_LIST_ENTIRE_ROW: list = ['', '', '', '', '', '', '']
 
 INDEX_PRIMARY_KEY = LIST_STATIC_WATCH_LIST_COLUMN_NAMES.index(TUPLE_STATIC_WATCH_LIST_QUOTE_ISIN[
                                                       _index_tuple.OPTION_NAME])
