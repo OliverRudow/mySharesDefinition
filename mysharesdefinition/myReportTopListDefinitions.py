@@ -60,7 +60,7 @@ TUPLE_REPORT_TOP_LIST_QUOTE_NAME: tuple[str, str, tuple[str, str], type[tuple]] 
 TUPLE_REPORT_TOP_LIST_QUOTE_INDUSTRY: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.QUOTE_INDUSTRY',
      'quote_industry',
-    ('quote_ndustry', 'TEXT'),
+    ('quote_industry', 'TEXT'),
      tuple)
 
 TUPLE_REPORT_TOP_LIST_QUOTE_CURRENCY: tuple[str, str, tuple[str, str], type[tuple]] = \
@@ -108,7 +108,7 @@ TUPLE_REPORT_TOP_LIST_FUNDAMENTALS_SCORE: tuple[str, str, tuple[str, str], type[
 TUPLE_REPORT_TOP_LIST_PERFORMANCE_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.PERFORMANCE_SCORE',
      'performance_score',
-    ('performance', 'REAL'),
+    ('performance_score', 'REAL'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY: tuple[str, str, tuple[str, str], type[tuple]] = \
