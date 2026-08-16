@@ -47,32 +47,32 @@ LIST_SECTIONS_WATCH_LIST: list[str] = ['TUPLE_REPORT_TOP_LIST_QUOTE_ISIN',
 
 TUPLE_REPORT_TOP_LIST_QUOTE_ISIN: tuple[str, str, tuple[str, str, str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.QUOTE_ISIN',
-     'isin',
-    ('isin', 'TEXT', 'NOT NULL', 'PRIMARY KEY'),
+     'quote_isin',
+    ('quote_isin', 'TEXT', 'NOT NULL', 'PRIMARY KEY'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_QUOTE_NAME: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.QUOTE_NAME',
-    'name',
-    ('name', 'TEXT'),
+    'quote_name',
+    ('quote_name', 'TEXT'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_QUOTE_INDUSTRY: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.QUOTE_INDUSTRY',
-     'industry',
-    ('industry', 'TEXT'),
+     'quote_industry',
+    ('quote_ndustry', 'TEXT'),
      tuple)
 
 TUPLE_REPORT_TOP_LIST_QUOTE_CURRENCY: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.QUOTE_CURRENCY',
-    'ccy',
-    ('ccy', 'TEXT'),
+    'quote_currency',
+    ('quote_currency', 'TEXT'),
      tuple)
 
 TUPLE_REPORT_TOP_LIST_CURRENT_PRICE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.CURRENT_PRICE',
-    'price',
-    ('price', 'REAL'),
+    'current_price',
+    ('current_price', 'REAL'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_CHANGE_PERCENT: tuple[str, str, tuple[str, str], type[tuple]] = \
@@ -89,26 +89,26 @@ TUPLE_REPORT_TOP_LIST_CHANGE_PERCENT_TWENTY_DAY: tuple[str, str, tuple[str, str]
 
 TUPLE_REPORT_TOP_LIST_ANALYST_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.ANALYST_SCORE',
-     'aly_sc',
-    ('aly_sc', 'REAL'),
+     'analyst_score',
+    ('analyst_score', 'REAL'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_DERIVATE_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.DERIVATE_SCORE',
-     'der_sc',
-    ('der_sc', 'REAL'),
+     'derivate_score',
+    ('derivate_score', 'REAL'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_FUNDAMENTALS_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.FUNDAMENTALS_SCORE',
-     'fdm_sc',
-    ('fdm_sc', 'REAL'),
+     'fundamentals_score',
+    ('fundamentals_score', 'REAL'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_PERFORMANCE_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.PERFORMANCE_SCORE',
-     'perf_sc',
-    ('perf_sc', 'REAL'),
+     'performance_score',
+    ('performance', 'REAL'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY: tuple[str, str, tuple[str, str], type[tuple]] = \
@@ -119,8 +119,8 @@ TUPLE_REPORT_TOP_LIST_TWENTY_DAY_CHANGE_PERCENT_JSON_ARRAY: tuple[str, str, tupl
 
 TUPLE_REPORT_TOP_LIST_OVERALL_SCORE: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('REPORT_TOP_LIST.OVERALL_SCORE',
-     'score',
-    ('score', 'REAL'),
+     'overall_score',
+    ('overall_score', 'REAL'),
     tuple)
 
 TUPLE_REPORT_TOP_LIST_SHIFT: tuple[str, str, tuple[str, str], type[tuple]] = \
