@@ -86,19 +86,19 @@ TUPLE_RANKING_WATCH_LIST_SHIFT: tuple[str, str, tuple[str, str], type[tuple]] = 
 
 _index_tuple = myTuple.MyTuple
 
-LIST_STATIC_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_RANKING_WATCH_LIST_QUOTE_ISIN[
+LIST_RANKING_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_RANKING_WATCH_LIST_QUOTE_ISIN[
                                                       _index_tuple.OPTION_NAME],
-                                                  TUPLE_RANKING_WATCH_LIST_ANALYST_SCORE[
+                                                   TUPLE_RANKING_WATCH_LIST_ANALYST_SCORE[
                                                       _index_tuple.OPTION_NAME],
-                                                  TUPLE_RANKING_WATCH_LIST_DERIVATE_SCORE[
+                                                   TUPLE_RANKING_WATCH_LIST_DERIVATE_SCORE[
                                                       _index_tuple.OPTION_NAME],
-                                                  TUPLE_RANKING_WATCH_LIST_FUNDAMENTALS_SCORE[
+                                                   TUPLE_RANKING_WATCH_LIST_FUNDAMENTALS_SCORE[
                                                       _index_tuple.OPTION_NAME],
-                                                  TUPLE_RANKING_WATCH_LIST_PERFORMANCE_SCORE[
+                                                   TUPLE_RANKING_WATCH_LIST_PERFORMANCE_SCORE[
                                                       _index_tuple.OPTION_NAME],
-                                                  TUPLE_RANKING_WATCH_LIST_OVERALL_SCORE[
+                                                   TUPLE_RANKING_WATCH_LIST_OVERALL_SCORE[
                                                       _index_tuple.OPTION_NAME],
-                                                  TUPLE_RANKING_WATCH_LIST_SHIFT[
+                                                   TUPLE_RANKING_WATCH_LIST_SHIFT[
                                                       _index_tuple.OPTION_NAME]]
 
 STR_SCORE_TABLE_NAME: str = 'score_config'
