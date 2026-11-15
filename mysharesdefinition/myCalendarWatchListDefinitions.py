@@ -9,14 +9,14 @@ __copyright__: str = "Copyright 2026, Brain Center Höfen"
 from mydatabase.mySQLDataBase import STR_SQL_DATA_BASE_NAME, STR_SQL_DATA_DIR_NAME
 from mytuple import myTuple
 
-def init_dict_calendar_watch_list_data() -> dict[str,  str | int | None]:
+def init_dict_calendar_watch_list_data() -> dict[str, str | int | None]:
     elem = 0
 
-    for key in DICT_STATIC_WATCH_LIST_DATA:
-        DICT_STATIC_WATCH_LIST_DATA[key] = EMPTY_LIST_ENTIRE_ROW[elem]
+    for key in DICT_CALENDAR_WATCH_LIST_DATA:
+        DICT_CALENDAR_WATCH_LIST_DATA[key] = EMPTY_LIST_ENTIRE_ROW[elem]
         elem += 1
 
-    return DICT_STATIC_WATCH_LIST_DATA
+    return DICT_CALENDAR_WATCH_LIST_DATA
 
 STR_DATA_BASE_FILE_NAME: str = STR_SQL_DATA_BASE_NAME
 
@@ -104,7 +104,7 @@ LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_CALENDAR_WATCH_LIST_QU
                                                    TUPLE_CALENDAR_WATCH_LIST_EARNINGS_DELTA_DATE[
                                                       _index_tuple.OPTION_NAME],]
 
-DICT_STATIC_WATCH_LIST_DATA: dict[str,  str | int | None] = dict.fromkeys(LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES)
+DICT_CALENDAR_WATCH_LIST_DATA: dict[str, str | int | None] = dict.fromkeys(LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES)
 
 EMPTY_LIST_ENTIRE_ROW: list = ['', '', '', '', '', '', '']
 

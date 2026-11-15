@@ -267,8 +267,6 @@ LIST_PERFORMANCE_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_PERFORMANCE_WATCH_L
                                                         _index_tuple.OPTION_NAME],
                                                       TUPLE_PERFORMANCE_WATCH_LIST_REGULAR_MARKET_CHANGE_PERCENT[
                                                         _index_tuple.OPTION_NAME],
-                                                      TUPLE_PERFORMANCE_WATCH_LIST_INTRADAY_MOMENTUM[
-                                                        _index_tuple.OPTION_NAME],
                                                       TUPLE_PERFORMANCE_WATCH_LIST_VOLUME[
                                                         _index_tuple.OPTION_NAME],
                                                       TUPLE_PERFORMANCE_WATCH_LIST_AVERAGE_VOLUME[
@@ -300,7 +298,7 @@ LIST_PERFORMANCE_WATCH_LIST_COLUMN_NAMES: list[str] = [TUPLE_PERFORMANCE_WATCH_L
 
 DICT_PERFORMANCE_WATCH_LIST_DATA: dict = dict.fromkeys(LIST_PERFORMANCE_WATCH_LIST_COLUMN_NAMES)
 
-EMPTY_LIST_ENTIRE_ROW: list = ['', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None,
+EMPTY_LIST_ENTIRE_ROW: list = ['', None, None, None, None, None, None, None, None, None, None, None, None, None, None,
                                None, None, None, None, None, None, None, None, None, None, None, None, None]
 
 INDEX_PRIMARY_KEY = LIST_PERFORMANCE_WATCH_LIST_COLUMN_NAMES.index(TUPLE_PERFORMANCE_WATCH_LIST_QUOTE_ISIN[
@@ -389,8 +387,8 @@ TUPLE_PERFORMANCE_WATCH_LIST_EVAL_SECTION_CHANGE_PERCENT: tuple[str, str, tuple[
 
 TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT_JSON_OBJECT: tuple[str, str, tuple[str, str], type[tuple]] = \
     ('PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT_JSON_OBJECT',
-    'twenty_day_change_percent_jsom_object',
-    ('twenty_day_change_percent_jsom_object', 'BLOB'),
+    'twenty_day_change_percent_json_object',
+    ('twenty_day_change_percent_json_object', 'BLOB'),
     tuple)
 
 TUPLE_PERFORMANCE_WATCH_LIST_EVAL_TWENTY_DAY_CHANGE_PERCENT: tuple[str, str, tuple[str, str], type[tuple]] = \

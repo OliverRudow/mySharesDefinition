@@ -1,6 +1,6 @@
-"""myCalendarWatchListDefinitions.py."""
+"""myStaticWatchListDefinitions.py."""
 
-__title__: str = "myCalendarWatchListDefinitions"
+__title__: str = "myStaticWatchListDefinitions"
 __version__: str = "0.3.0"
 __author__: str = "Oliver Rudow"
 __email__: str = "oliver.rudow@googlemail.com"

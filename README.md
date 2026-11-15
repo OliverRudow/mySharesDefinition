@@ -13,15 +13,17 @@ pip install mysharesdefinition
 
 Since this package contains multiple files, here is a quick overview of how the modules interact:
 
-mySharesDefinition/     
-├── __init__.py     
-├── myAnalystWatchListDefinitions.py            # tuple based definitions of the analysts table     
-├── myCalendarWatchListDefinitions.py           # tuple based definitions of the calendar watch list        
-├── myDerivateWatchListDefinitions.py           # tuple based definitions of the derivate watch list        
-├── myFundamentalsWatchListDefinitions.py       # tuple based definitions of the fundamentals watch list        
-├── myPerformanceWatchListDefinitions.py        # tuple based definitions of the performance watch list     
-├── myReportWatchListDefinitions.py             # tuple based definitions of the report watch list      
-├── myStatic WatchListDefinitions.py            # tuple based definitions of the static watch list
+mySharesDefinition/
+├── __init__.py                               # package exports
+├── myAnalystWatchListDefinitions.py          # tuple based definitions of the analyst watch list
+├── myCalendarWatchListDefinitions.py         # tuple based definitions of the calendar watch list
+├── myDerivateWatchListDefinitions.py         # tuple based definitions of the derivate watch list
+├── myFundamentalsWatchListDefinitions.py     # tuple based definitions of the fundamentals watch list
+├── myOrderVectorDefinition.py                # tuple based definitions of the order vector
+├── myPerformanceWatchListDefinitions.py      # tuple based definitions of the performance watch list
+├── myRankingWatchListDefinitions.py          # tuple based definitions of the ranking watch list
+├── myReportTopListDefinitions.py             # tuple based definitions of the report top list
+├── myStaticWatchListDefinitions.py           # tuple based definitions of the static watch list
 
 
 ## Documentation & API

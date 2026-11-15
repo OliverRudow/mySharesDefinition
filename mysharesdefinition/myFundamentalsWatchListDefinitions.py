@@ -94,7 +94,7 @@ TUPLE_FUNDAMENTALS_WATCH_LIST_FORWARD_PE: tuple[str, str, tuple[str, str], type[
     tuple)
 
 TUPLE_FUNDAMENTALS_WATCH_LIST_PRICE_TO_EARNING_TO_GROWTH: tuple[str, str, tuple[str, str], type[tuple]] = \
-    ('FUNDAMENTALS_WATCH_LIST.FORWARD_PE',
+    ('FUNDAMENTALS_WATCH_LIST.PRICE_TO_EARNING_TO_GROWTH',
     'price_to_earning_to_growth',
     ('price_to_earning_to_growth', 'REAL'),
     tuple)
@@ -326,7 +326,7 @@ TUPLE_FUNDAMENTALS_WATCH_LIST_EVAL_ABSOLUTE_SCORE: tuple[str, str, tuple[str, st
     ('absolute_score_eval', 'REAL'),
     tuple)
 
-LIST_DERIVATE_WATCH_LIST_EVAL_COLUMN_NAMES: list[str] = [TUPLE_FUNDAMENTALS_WATCH_LIST_EVAL_QUOTE_ISIN[
+LIST_FUNDAMENTALS_WATCH_LIST_EVAL_COLUMN_NAMES: list[str] = [TUPLE_FUNDAMENTALS_WATCH_LIST_EVAL_QUOTE_ISIN[
                                                         _index_tuple.OPTION_NAME],
                                                    TUPLE_FUNDAMENTALS_WATCH_LIST_EVAL_PRICE_TO_EARNING_TO_GROWTH[
                                                         _index_tuple.OPTION_NAME],

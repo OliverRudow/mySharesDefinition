@@ -104,7 +104,7 @@ TUPLE_ANALYST_WATCH_LIST_RISK_REWARD_RATIO: tuple[str, str, tuple[str, str], typ
     tuple)
 
 TUPLE_ANALYST_WATCH_LIST_ANALYST_DISPERSION: tuple[str, str, tuple[str, str], type[tuple]] = \
-    ('ANALYST_WATCH_LIST.RISK_REWARD_RATIO',
+    ('ANALYST_WATCH_LIST.ANALYST_DISPERSION',
     'analyst_dispersion',
     ('analyst_dispersion', 'REAL'),
     tuple)
@@ -128,7 +128,7 @@ TUPLE_ANALYST_WATCH_LIST_WEIGHTED_REVISION_INDEX: tuple[str, str, tuple[str, str
     tuple)
 
 TUPLE_ANALYST_WATCH_LIST_WEIGHTED_REVISION_TREND: tuple[str, str, tuple[str, str], type[tuple]] = \
-    ('ANALYST_WATCH_LIST.WEIGHTED_REVISION_INDEX',
+    ('ANALYST_WATCH_LIST.WEIGHTED_REVISION_TREND',
     'weighted_revision_trend',
     ('weighted_revision_trend', 'TEXT'),
     tuple)
@@ -209,7 +209,7 @@ TUPLE_ANALYST_WATCH_LIST_EVAL_UPSIDE_POTENTIAL: tuple[str, str, tuple[str, str],
     tuple)
 
 TUPLE_ANALYST_WATCH_LIST_EVAL_RISK_REWARD_RATIO: tuple[str, str, tuple[str, str], type[tuple]] = \
-    ('ANALYST_WATCH_LIST.RISK_REWARD_RATIO',
+    ('ANALYST_WATCH_LIST_EVAL.RISK_REWARD_RATIO',
     'risk_reward_ratio_eval',
     ('risk_reward_ratio_eval', 'INTEGER'),
     tuple)

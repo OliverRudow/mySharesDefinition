@@ -1,0 +1,123 @@
+"""mySharesDefinition — SQLite table definitions for myShares."""
+
+__version__: str = "0.3.0"
+__author__: str = "Oliver Rudow"
+
+from mysharesdefinition.myOrderVectorDefinition import (
+    LIST_ORDER_VECTOR_COLUMN_NAMES,
+    TUPLE_ORDER_VECTOR_HEADER,
+    TUPLE_ORDER_VECTOR_RANKING,
+    TUPLE_ORDER_VECTOR_ANALYST,
+    TUPLE_ORDER_VECTOR_DERIVATE,
+    TUPLE_ORDER_VECTOR_FUNDAMENTALS,
+    TUPLE_ORDER_VECTOR_PERFORMANCE,
+)
+from mysharesdefinition.myStaticWatchListDefinitions import (
+    STR_DATA_BASE_TABLE_NAME as STATIC_TABLE_NAME,
+    LIST_STATIC_WATCH_LIST_COLUMN_NAMES,
+    INDEX_PRIMARY_KEY as STATIC_INDEX_PRIMARY_KEY,
+    init_dict_static_watch_list_data,
+)
+from mysharesdefinition.myCalendarWatchListDefinitions import (
+    STR_DATA_BASE_TABLE_NAME as CALENDAR_TABLE_NAME,
+    LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES,
+    INDEX_PRIMARY_KEY as CALENDAR_INDEX_PRIMARY_KEY,
+    init_dict_calendar_watch_list_data,
+)
+from mysharesdefinition.myAnalystWatchListDefinitions import (
+    STR_DATA_BASE_TABLE_NAME as ANALYST_TABLE_NAME,
+    STR_DATA_BASE_TABLE_EVAL_NAME as ANALYST_EVAL_TABLE_NAME,
+    LIST_ANALYST_WATCH_LIST_COLUMN_NAMES,
+    LIST_ANALYST_WATCH_LIST_EVAL_COLUMN_NAMES,
+    INDEX_PRIMARY_KEY as ANALYST_INDEX_PRIMARY_KEY,
+    init_dict_analyst_watch_list_data,
+)
+from mysharesdefinition.myDerivateWatchListDefinitions import (
+    STR_DATA_BASE_TABLE_NAME as DERIVATE_TABLE_NAME,
+    STR_DATA_BASE_TABLE_EVAL_NAME as DERIVATE_EVAL_TABLE_NAME,
+    LIST_DERIVATE_WATCH_LIST_COLUMN_NAMES,
+    LIST_DERIVATE_WATCH_LIST_EVAL_COLUMN_NAMES,
+    INDEX_PRIMARY_KEY as DERIVATE_INDEX_PRIMARY_KEY,
+    init_dict_derivate_watch_list_data,
+)
+from mysharesdefinition.myFundamentalsWatchListDefinitions import (
+    STR_DATA_BASE_TABLE_NAME as FUNDAMENTALS_TABLE_NAME,
+    STR_DATA_BASE_TABLE_EVAL_NAME as FUNDAMENTALS_EVAL_TABLE_NAME,
+    LIST_FUNDAMENTALS_WATCH_LIST_COLUMN_NAMES,
+    LIST_FUNDAMENTALS_WATCH_LIST_EVAL_COLUMN_NAMES,
+    INDEX_PRIMARY_KEY as FUNDAMENTALS_INDEX_PRIMARY_KEY,
+    init_dict_fundamentals_watch_list_data,
+)
+from mysharesdefinition.myPerformanceWatchListDefinitions import (
+    STR_DATA_BASE_TABLE_NAME as PERFORMANCE_TABLE_NAME,
+    STR_DATA_BASE_TABLE_EVAL_NAME as PERFORMANCE_EVAL_TABLE_NAME,
+    LIST_PERFORMANCE_WATCH_LIST_COLUMN_NAMES,
+    LIST_PERFORMANCE_WATCH_LIST_EVAL_COLUMN_NAMES,
+    INDEX_PRIMARY_KEY as PERFORMANCE_INDEX_PRIMARY_KEY,
+    init_dict_performance_watch_list_data,
+)
+from mysharesdefinition.myRankingWatchListDefinitions import (
+    STR_DATA_BASE_TABLE_NAME as RANKING_TABLE_NAME,
+    LIST_RANKING_WATCH_LIST_COLUMN_NAMES,
+)
+from mysharesdefinition.myReportTopListDefinitions import (
+    STR_DATA_BASE_TABLE_NAME as REPORT_TABLE_NAME,
+    LIST_REPORT_TOP_LIST_COLUMN_NAMES,
+    INDEX_PRIMARY_KEY as REPORT_INDEX_PRIMARY_KEY,
+)
+
+__all__ = [
+    # Order vector
+    "LIST_ORDER_VECTOR_COLUMN_NAMES",
+    "TUPLE_ORDER_VECTOR_HEADER",
+    "TUPLE_ORDER_VECTOR_RANKING",
+    "TUPLE_ORDER_VECTOR_ANALYST",
+    "TUPLE_ORDER_VECTOR_DERIVATE",
+    "TUPLE_ORDER_VECTOR_FUNDAMENTALS",
+    "TUPLE_ORDER_VECTOR_PERFORMANCE",
+    # Static watch list
+    "STATIC_TABLE_NAME",
+    "LIST_STATIC_WATCH_LIST_COLUMN_NAMES",
+    "STATIC_INDEX_PRIMARY_KEY",
+    "init_dict_static_watch_list_data",
+    # Calendar watch list
+    "CALENDAR_TABLE_NAME",
+    "LIST_CALENDAR_WATCH_LIST_COLUMN_NAMES",
+    "CALENDAR_INDEX_PRIMARY_KEY",
+    "init_dict_calendar_watch_list_data",
+    # Analyst watch list
+    "ANALYST_TABLE_NAME",
+    "ANALYST_EVAL_TABLE_NAME",
+    "LIST_ANALYST_WATCH_LIST_COLUMN_NAMES",
+    "LIST_ANALYST_WATCH_LIST_EVAL_COLUMN_NAMES",
+    "ANALYST_INDEX_PRIMARY_KEY",
+    "init_dict_analyst_watch_list_data",
+    # Derivate watch list
+    "DERIVATE_TABLE_NAME",
+    "DERIVATE_EVAL_TABLE_NAME",
+    "LIST_DERIVATE_WATCH_LIST_COLUMN_NAMES",
+    "LIST_DERIVATE_WATCH_LIST_EVAL_COLUMN_NAMES",
+    "DERIVATE_INDEX_PRIMARY_KEY",
+    "init_dict_derivate_watch_list_data",
+    # Fundamentals watch list
+    "FUNDAMENTALS_TABLE_NAME",
+    "FUNDAMENTALS_EVAL_TABLE_NAME",
+    "LIST_FUNDAMENTALS_WATCH_LIST_COLUMN_NAMES",
+    "LIST_FUNDAMENTALS_WATCH_LIST_EVAL_COLUMN_NAMES",
+    "FUNDAMENTALS_INDEX_PRIMARY_KEY",
+    "init_dict_fundamentals_watch_list_data",
+    # Performance watch list
+    "PERFORMANCE_TABLE_NAME",
+    "PERFORMANCE_EVAL_TABLE_NAME",
+    "LIST_PERFORMANCE_WATCH_LIST_COLUMN_NAMES",
+    "LIST_PERFORMANCE_WATCH_LIST_EVAL_COLUMN_NAMES",
+    "PERFORMANCE_INDEX_PRIMARY_KEY",
+    "init_dict_performance_watch_list_data",
+    # Ranking watch list
+    "RANKING_TABLE_NAME",
+    "LIST_RANKING_WATCH_LIST_COLUMN_NAMES",
+    # Report top list
+    "REPORT_TABLE_NAME",
+    "LIST_REPORT_TOP_LIST_COLUMN_NAMES",
+    "REPORT_INDEX_PRIMARY_KEY",
+]
