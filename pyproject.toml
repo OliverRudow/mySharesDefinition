@@ -1,14 +1,12 @@
 [tool.poetry]
 name = "mySharesDefinition"
-version = "0.3.0"
+version = "1.0.0"
 description = "A Python package that holds definitions for SQLite tables."
 authors = ["oliverrudow <oliver.rudow@googlemail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.14"
-mytuple = "*"
-mydatabase = "*"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0"

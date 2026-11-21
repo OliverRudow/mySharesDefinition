@@ -65,6 +65,11 @@ from mysharesdefinition.myReportTopListDefinitions import (
     LIST_REPORT_TOP_LIST_COLUMN_NAMES,
     INDEX_PRIMARY_KEY as REPORT_INDEX_PRIMARY_KEY,
 )
+from mysharesdefinition.myOnvistaTopSharesListDefinition import (
+    STR_DATA_BASE_TABLE_NAME as ONVISTA_TABLE_NAME,
+    LIST_ONVISTA_TOP_SHARES_LIST_COLUMN_NAMES,
+    INDEX_PRIMARY_KEY as ONVISTA_INDEX_PRIMARY_KEY,
+)
 
 __all__ = [
     # Order vector
@@ -120,4 +125,8 @@ __all__ = [
     "REPORT_TABLE_NAME",
     "LIST_REPORT_TOP_LIST_COLUMN_NAMES",
     "REPORT_INDEX_PRIMARY_KEY",
+    # Onvista Top Shares List
+    "ONVISTA_TABLE_NAME",
+    "LIST_ONVISTA_TOP_SHARES_LIST_COLUMN_NAMES",
+    "ONVISTA_INDEX_PRIMARY_KEY",
 ]
